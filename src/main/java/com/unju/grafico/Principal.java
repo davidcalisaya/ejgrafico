@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.unju.grafico;
 
 import javax.swing.JFrame;
@@ -12,20 +7,20 @@ import org.jfree.chart.JFreeChart;
 import org.jfree.data.general.DefaultPieDataset;
 /**
  *
- * @author D.C
+ * @author SERGIO
  */
 public class Principal {
 
     public static void main(String[] args) {
 
         DefaultPieDataset datos = new DefaultPieDataset();
-        datos.setValue("Windows", new Double(70));
-        datos.setValue("iOS", new Double(15));
-        datos.setValue("Linux", new Double(10));
-        datos.setValue("XX", new Double(5));
+        datos.setValue("Futbol", new Double(75));
+        datos.setValue("Basquet", new Double(10));
+        datos.setValue("Tenis", new Double(7));
+        datos.setValue("Otros", new Double(3));
 
         JFreeChart grafico = ChartFactory.createPieChart(// graf de tipo circular
-                "Grafico Sistemas operativos",// título																		
+                "Grafico De Deportes",// título																		
                 datos, // datos
                 true, // incluir referenciasXX
                 true, false);
