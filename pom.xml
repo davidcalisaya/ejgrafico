@@ -18,5 +18,5 @@
             <version>1.5.0</version>
         </dependency>
     </dependencies>
-    <name>Grafico</name>
+    <name>ejgrafico</name>
 </project>
