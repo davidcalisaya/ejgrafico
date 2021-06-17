@@ -19,20 +19,20 @@ public class Principal {
     public static void main(String[] args) {
 
         DefaultPieDataset datos = new DefaultPieDataset();
-        datos.setValue("Windows", new Double(70));
-        datos.setValue("iOS", new Double(15));
-        datos.setValue("Linux", new Double(10));
-        datos.setValue("XX", new Double(5));
+        datos.setValue("Primer año", new Double(50));
+        datos.setValue("Segundo año", new Double(25));
+        datos.setValue("Tercer año", new Double(10));
+        datos.setValue("Cuarto año", new Double(15));
 
         JFreeChart grafico = ChartFactory.createPieChart(// graf de tipo circular
-                "Grafico Sistemas operativos",// título																		
+                "Grafico de alumnos",// título																		
                 datos, // datos
                 true, // incluir referenciasXX
                 true, false);
 
         ChartPanel panel = new ChartPanel(grafico);
 
-        JFrame ventana = new JFrame("Grafica estadístico de uso en particular");
+        JFrame ventana = new JFrame("Grafica estadístico de uso general");
         ventana.setVisible(true);
         ventana.setSize(1000, 800);
         ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
