@@ -19,13 +19,17 @@ public class Principal {
     public static void main(String[] args) {
 
         DefaultPieDataset datos = new DefaultPieDataset();
-        datos.setValue("Windows", new Double(70));
-        datos.setValue("iOS", new Double(15));
-        datos.setValue("Linux", new Double(10));
-        datos.setValue("XX", new Double(5));
+        datos.setValue("Accion", new Double(25));
+        datos.setValue("Suspenso", new Double(5));
+        datos.setValue("Comedia", new Double(10));
+        datos.setValue("Ciencia Ficcion", new Double(20));
+        datos.setValue("Romance", new Double(15));
+        datos.setValue("Animados", new Double(10));
+        datos.setValue("Terror", new Double(10));
+        datos.setValue("Drama", new Double(5));
 
         JFreeChart grafico = ChartFactory.createPieChart(// graf de tipo circular
-                "Grafico Sistemas operativos",// título																		
+                "TIPOS DE PELICULAS FAVORITAS",// título																		
                 datos, // datos
                 true, // incluir referenciasXX
                 true, false);
