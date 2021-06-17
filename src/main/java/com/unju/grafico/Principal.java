@@ -19,13 +19,13 @@ public class Principal {
     public static void main(String[] args) {
 
         DefaultPieDataset datos = new DefaultPieDataset();
-        datos.setValue("Windows", new Double(70));
-        datos.setValue("iOS", new Double(15));
-        datos.setValue("Linux", new Double(10));
-        datos.setValue("XX", new Double(5));
+        datos.setValue("Toyota", new Double(30));
+        datos.setValue("Mercedes-Benz", new Double(27));
+        datos.setValue("BMW", new Double(24));
+        datos.setValue("Ford", new Double(20));
 
         JFreeChart grafico = ChartFactory.createPieChart(// graf de tipo circular
-                "Grafico Sistemas operativos",// título																		
+                "Automoviles mas Vendidos",// título																		
                 datos, // datos
                 true, // incluir referenciasXX
                 true, false);
